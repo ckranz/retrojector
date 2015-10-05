@@ -42,7 +42,7 @@ $c=count($columns);
 foreach($columns AS $col)
 {
 	echo "<tr>";
-	echo "<td>$col:</td><td><select name=\"$col\" onchange=\"retroject();\">";
+	echo "<td>$col:</td><td><select name=\"csv_data[$col]\" onchange=\"retroject();\">";
 	echo "<option value=\"ignore\" selected>Remove</option>";
 	for($j=0;$j<$c;$j++)
 	{
