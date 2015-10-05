@@ -35,7 +35,7 @@ if (($handle = fopen($target_file, "r")) !== FALSE) {
 echo "<table width=\"100%\"><tr><td valign=\"top\">";
 echo "<table>";
 echo "<form action=\"process.php\" method=\"post\" id=\"UploadData\" name=\"UploadData\">";
-echo "<input type=\"hidden\" value=\"filename\" value=\"$target_file\">";
+echo "<input type=\"hidden\" name=\"UploadedFile\" value=\"".basename($target_file)."\">";
 echo "<tr><th colspan=\"2\">Build Document Structure</th></tr>\r\n";
 echo "<tr><td>Data (column heading)</td><td>Document Level</td></tr>\r\n";
 $c=count($columns);
